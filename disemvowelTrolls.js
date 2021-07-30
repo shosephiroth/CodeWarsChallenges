@@ -1,13 +1,13 @@
 function disemvowel(str) {
-  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O','U'];
   let newStr = [];
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] !== vowels[i]) {
+  for (let i = 0; i < str.length - 1; i++) {
+    if (str[i].includes(vowels[i])) {
       newStr.push(str[i]);
     }
   }
   str = newStr.join('');
   //test
-  console.log(str)
+  console.log(str);
   return str;
 }
