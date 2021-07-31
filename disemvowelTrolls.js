@@ -7,5 +7,5 @@ function disemvowel(str) {
       console.log(newStr);
     }
   }
-  return str;
+  return newStr;
 }
